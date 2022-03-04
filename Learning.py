@@ -102,7 +102,7 @@
 #     if name != "":
 #         break
 
-# phone_number = "951-259-1521"
+# phone_number = "555-555-5555"
 #
 # for i in phone_number:
 #     if i == "-":
@@ -608,15 +608,193 @@
 #     .brake()\
 #     .turn_off()
 
+# class Rectangle:
+#
+#     def __init__(self, length, width):
+#         self.length = length
+#         self.width = width
+#
+# class Square(Rectangle):
+#
+#     def __init__(self, length, width):
+#         super().__init__(length, width)
+#
+#     def area(self):
+#         return self.length*self.width
+#
+# class Cube(Rectangle):
+#
+#     def __init__(self, length, width, height):
+#         super().__init__(length, width)
+#         self.height = height
+#
+#     def volume(self):
+#         return self.length*self.width*self.height
+#
+# square = Square(3, 3)
+# cube = Cube(3, 3, 3)
+#
+# print(square.area())
+# print(cube.volume())
 
 
+# from abc import ABC, abstractmethod
+#
+# class Vehicle(ABC):
+#
+#     @abstractmethod
+#     def go(self):
+#         pass
+#
+#     @abstractmethod
+#     def stop(self):
+#         pass
+#
+# class Car(Vehicle):
+#
+#     def go(self):
+#         print("you drive the car")
+#
+#     def stop(self):
+#         print("this car is stopped")
+#
+# class Motorcycle(Vehicle):
+#
+#     def go(self):
+#         print("you ride the motercycle")
+#
+#     def stop(self):
+#         print("this motorcycle is stopped")
+#
+# # vehicle = Vehicle()
+# car = Car()
+# motorcycle = Motorcycle()
+#
+# # vehicle.go()
+# car.go()
+# motorcycle.go()
+#
+# car.stop()
+# motorcycle.stop()
+
+# class Car:
+#
+#     color = None
+#
+# class Motorcycle:
+#
+#     color = None
+#
+# def change_color(car, color):
+#
+#     car.color = color
+#
+# car_1 = Car()
+# car_2 = Car()
+# car_3 = Car()
+#
+# bike_1 = Motorcycle()
+#
+# change_color(car_1,"red")
+# change_color(car_2,"blue")
+# change_color(car_3,"yellow")
+#
+# change_color(bike_1, "black")
+#
+# print(car_1.color)
+# print(car_2.color)
+# print(car_3.color)
+#
+# print(bike_1.color)
 
 
+# class Duck:
+#
+#     def walk(self):
+#         print("this duck is walking")
+#
+#     def talk(self):
+#         print("this duck is quacking")
+#
+# class Chicken:
+#
+#     def walk(self):
+#         print("this chicken is walking")
+#
+#     def talk(self):
+#         print("This chicken is clucking")
+#
+# class Person:
+#
+#     def catch(self, duck):
+#         duck.walk()
+#         duck.talk()
+#         print("you caught the bird")
+#
+# duck = Duck()
+# chicken = Chicken()
+# person = Person()
+#
+# person.catch(chicken)
 
+# happy = True
+# print(happy)
+#
+# print(happy := True)
+#
+# foods = list()
+# while True:
+#     food = input("what food do you like? ")
+#     if food == "quit":
+#         break
+#     foods.append(food)
+#
+# foods = list()
+# while food := input("what food do you like? ") != "quit":
+#     foods.append(food)
 
+# def hello():
+#     print("hello")
+#
+# # hello = hello
+# # hello()
+# # hi()
+#
+# say = print
+# say("I am a awesome person :)")
 
+# def loud(text):
+#     return text.upper()
+#
+# def quite(text):
+#     return text.lower()
+#
+# def hello(func):
+#     text = func("hElLo")
+#     print(text)
+#
+# hello(loud)
 
+# def divisor(x):
+#     def dividend(y):
+#         return y / x
+#     return dividend
+#
+# divide = divisor(2)
+# print(divide(10))
 
+# def double(x):
+#     return x * 2
+#
+# print(double(5))
+
+# double = lambda x:x * 2
+# multiply = lambda x, y: x * y
+# add = lambda  x, y, z: x + y + z
+# full_name = lambda first_name, last_name: first_name+" "+last_name
+# age_check = lambda age:True if age >= 18 else False
+#
+# print(age_check(17))
 
 
 
