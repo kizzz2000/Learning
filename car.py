@@ -23,4 +23,3 @@
 #         self.model = model
 #         self.year = year
 #         self.color = color
-
